@@ -15,26 +15,45 @@
     <div class="container">
         <div class="navbar">
             <ul>
-                <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
-                <li><a href="#" class="nav-link" data-section="about">About</a></li>
-                <li><a href="#" class="nav-link" data-section="work">Work</a></li>
-                <li><a href="#" class="nav-link" data-section="contact">Contact</a></li>
+                <li>
+                    <a href="#" class="nav-link active" data-section="home">
+                        <img src="images/home.svg" alt="Home" class="nav-icon">
+                        <div class="nav-text">Home</div></a></li>
+                <li>
+                    <a href="#" class="nav-link" data-section="about">
+                        <img src="images/about.svg" alt="Home" class="nav-icon">
+                        <div class="nav-text">About</div></a></li>
+                <li>
+                    <a href="#" class="nav-link" data-section="work">
+                        <img src="images/interests.svg" alt="Home" class="nav-icon">
+                        <div class="nav-text">Projects</div></a></li>
+                <li>
+                    <a href="#" class="nav-link" data-section="contact">
+                        <img src="images/contact.svg" alt="Home" class="nav-icon">
+                        <div class="nav-text">Contact</div></a></li>
             </ul>
         </div>
         <div class="content">
-            <section id="home" class="content-section">
+            <section id="home" class="content-section active">
                 <h1 class="wave-animate">Shrimply delighted to see you!</h1>
                 <p class="wave-animate">Welcome and take your time exploring!</p>
             </section>
             <section id="about" class="content-section ">
                 <h1>About Me 🦐</h1>
+                
                 <section>
-                <p>> Hi, my name is <span>Mackenzie Chung</span></p>
-                <p>> I'm a current Brandeis University student who's majoring in computer science. I enjoy creating art in my
-                    free time, and I enjoy finding ways to incorporate my art into my programming projects.
-                </p>
-            
-                <button onClick="window.open('./assets/resumeMC.pdf')">Resume</button>
+                <div class="profile-container">
+                    <img src="gallery/img2.jpg" alt="placeholder" class="profile-pic">
+                    <div class="profile-text">
+                        <p>> Hi, my name is <span>Mackenzie Chung</span></p>
+                        <p>> I'm a current Brandeis University student who's majoring in computer science. I enjoy creating art in my
+                            free time, and I enjoy finding ways to incorporate my art into my programming projects.
+                        </p>
+                        <br>
+                        <button onClick="window.open('./assets/resumeMC.pdf')">Resume</button>
+                    </div>
+                </div>
+                
 
                 <hr>
                 <div class="list-row">
@@ -74,7 +93,7 @@
                 
             </section>
 
-            <section id="work" class="content-section active">
+            <section id="work" class="content-section">
                 <h1>Projects + Hobbies</h1>
                 <p>> Here are some of my programming projects and art that I've created</p>
                 <hr>

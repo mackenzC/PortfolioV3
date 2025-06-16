@@ -31,6 +31,7 @@ span {
 }
 
 .navbar ul li a{
+
     display: inline-block;
     font-size: 1.5vw;
     font-weight: 400;
@@ -89,7 +90,7 @@ span {
 
 /* HOME */
 #home {
-    top:50%;
+    top:55%;
     left:50%;
     transform: translate(-50%, -50%);
     /* background-color: rosybrown; */
@@ -153,6 +154,24 @@ span {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* background-color: #333; */
+}
+
+.profile-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+
+
 
 /* #about section {
     display: flex;
@@ -224,12 +243,14 @@ span {
 
 /* FOOTER */
 footer {
-    font-size: 1.2vw;
+    font-size: 1.0vw;
     position: fixed;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
     color: rgb(58, 58, 58);
+    /* background-color: rgba(0, 131, 246, 0.918); */
+    width: 100%;
 
 }
 
