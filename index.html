@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><text y="52" font-size="52">&#129424;</text></svg>'>
+    <title>One in a Krillion</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#" class="nav-link" data-section="work">Work</a></li>
+                <li><a href="#" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <section id="home" class="content-section">
+                <h1 class="wave-animate">Shrimply delighted to see you!</h1>
+                <p class="wave-animate">Welcome and take your time exploring!</p>
+            </section>
+            <section id="about" class="content-section ">
+                <h1>About Me 🦐</h1>
+                <section>
+                <p>> Hi, my name is <span>Mackenzie Chung</span></p>
+                <p>> I'm a current Brandeis University student who's majoring in computer science. I enjoy creating art in my
+                    free time, and I enjoy finding ways to incorporate my art into my programming projects.
+                </p>
+            
+                <button onClick="window.open('./assets/resumeMC.pdf')">Resume</button>
+
+                <hr>
+                <div class="list-row">
+                    <div class="skills-container">
+                        <h3>Skill Sets</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>GDscript</li>
+                            <li>Team player!</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="programs-container">
+                        <h3>Familiar Programs</h3>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>GitHub</li>
+                            <li>Godot</li>
+                            <li>Figma</li>
+                            <li>InkScape</li>
+                            <li>Aesprite</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>My Interests</h3>
+                <ul>
+                    <li>Game Development & Design</li>
+                    <li>Cybersecurity</li>
+                    <li>3D Modeling</li>
+                    <li>Pixel & Vector Art</li>
+                    <li>2D Animation</li>
+                </ul>
+                </section>
+                
+            </section>
+
+            <section id="work" class="content-section active">
+                <h1>Projects + Hobbies</h1>
+                <p>> Here are some of my programming projects and art that I've created</p>
+                <hr>
+
+                <h3>Programming Projects</h3>
+                <div class="projects">
+                    <h4>Personal Website</h4>
+                        <p>> This website is a personal project that I created to showcase my skills and interests. It is built using HTML, CSS, and JavaScript.</p>
+                    <h4><a href="https://deborahengelberg.github.io/COSI116A-Brandeis-InfoVis-Fall24.github.io/" target="_blank">Visualization Project (Fall 2024)</a></h4>
+                        <p>> This is a team project for COSI116a (Intro. to Data Visualization). We used HTML/CSS/JS, TopoJSON, Pandas, and D3.js for our project.</p>
+                </div>
+                
+                <hr>
+                <h3>Sketches & Illustrations</h3>
+                <div class="gallery">
+                    <img src="gallery/img1.jpg" class="img" id="img1"alt="Drawing 1">
+                    <img src="gallery/img2.jpg" class="img" id="img2"alt="Drawing 2">
+                    <img src="gallery/img3.jpg" class="img" id="img3"alt="Drawing 3">
+                    <img src="gallery/img4.jpg" class="img" id="img4"alt="Drawing 4">
+                    <img src="gallery/img5.jpg" class="img" id="img5"alt="Drawing 5">                </div>
+            </section>
+
+            <section id="contact" class="content-section">
+                <h1>Let's Get in Touch!</h1>
+                <p>> Feel free to reach out via email at <a href="mailto:mackenzchung@gmail.com"><span>mackenzchung@gmail.com</span></a></p>
+                <br>
+                <h3>Other Socials</h3>
+                <p>> linkedIn: <a href="https://www.linkedin.com/in/mackenzc/" target="_blank"><span>mackenzC</span></a></p>
+                <p>> Github: <a href="https://github.com/mackenzC" target="_blank"><span>mackenzC</span></a></p>
+                <h4>------------------------------------------------------------------------------</h4>
+                <h2>Thanks for Visiting! <br> <span class="wave-animate">You're one in a krillion!</span></h2>
+            
+            </section>
+    </div>
+    </div>
+    <footer>
+        <p>© 2025 Mackenzie Chung</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
