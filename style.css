@@ -1,7 +1,5 @@
 html, body {
-    position: relative;
     overflow: hidden;
-
     font-family: "Silkscreen", sans-serif;
 
     background-color: lightblue;
@@ -12,6 +10,12 @@ html, body {
     90px 65px;
     background-repeat: repeat;
 }
+
+p {
+    font-size: 20px;
+    /* color: #333; */
+}
+
 
 a {
     text-decoration: none;
@@ -45,9 +49,6 @@ span {
     transform: translateY(-5px);
 }
 
-
-
-
 .container {
     position: fixed;
     top: 50%;
@@ -63,9 +64,7 @@ span {
 
 /* CONTENT */
 .content {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
+    
 }
 
 .content-section {
@@ -87,7 +86,6 @@ span {
 }
 
 
-
 /* HOME */
 #home {
     top:55%;
@@ -95,7 +93,6 @@ span {
     transform: translate(-50%, -50%);
     /* background-color: rosybrown; */
     width: 70vw;
-    /* height: 90vh; */
 }
 
 #home h1 {
@@ -119,9 +116,54 @@ span {
     50%      { transform: translateY(-15px); }
 }
 
+/* SHRIMP FACE */
+.shrimp-face {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #ffcccb;
+    border-radius: 50%;
+}
 
+.eyes {
+    position: relative;
+    top: 50px;
+    justify-content: center;
+    display: flex;
+}
 
+.eyes .eye {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 10px;
+    display: block;
+}
 
+.eyes .eye::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+@keyframes blink {
+    0% { transform: scaleY(1); }
+    50% { transform: scaleY(0.1); }
+    100% { transform: scaleY(1); }
+}
+
+.eyes .eye.blink {
+    animation: blink 0.2s ease;
+}
 
 
 /* ABOUT */
@@ -140,10 +182,8 @@ span {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.2vw;
+    font-size: 15px;
     box-shadow: 0 9px #999;
-
-
     transition: background-color 0.3s;
 }
 #about button:hover {
@@ -160,7 +200,6 @@ span {
     display: flex;
     align-items: center;
     gap: 20px;
-    /* background-color: #333; */
 }
 
 .profile-pic{
@@ -172,18 +211,10 @@ span {
 
 
 
-
-/* #about section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-} */
 /* List the skills and programs in a row */
 .list-row {
     display: flex;
-    gap: 42px;
+    gap: 45px;
 }
 
 /* WORK */
@@ -205,15 +236,39 @@ span {
 
 
 /* GALLERY */
-.img {
-    width: 400px;
-    height: 400px;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.sketches {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
     border-radius: 15px;
-    padding: 5px;
+}
+
+.gallery img:hover {
+    cursor: zoom-in;
 }
 
 
-
+.gallery img.zoomed {
+    cursor: zoom-out;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    z-index: 1000;
+    display: block;
+    background-color: lightblue;
+    padding: 100vw;
+    object-fit: contain;
+}
 
 /* CONTACT */
 
@@ -249,7 +304,6 @@ footer {
     display: flex;
     justify-content: center;
     color: rgb(58, 58, 58);
-    /* background-color: rgba(0, 131, 246, 0.918); */
     width: 100%;
 
 }

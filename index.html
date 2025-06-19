@@ -37,11 +37,17 @@
             <section id="home" class="content-section active">
                 <h1 class="wave-animate">Shrimply delighted to see you!</h1>
                 <p class="wave-animate">Welcome and take your time exploring!</p>
+                <div class="shrimp-face">
+                    <div class="eyes">
+                        <div class="eye"></div>
+                        <div class="eye"></div>
+                    </div>
+                </div>
+            
             </section>
             <section id="about" class="content-section ">
                 <h1>About Me 🦐</h1>
                 
-                <section>
                 <div class="profile-container">
                     <img src="gallery/img2.jpg" alt="placeholder" class="profile-pic">
                     <div class="profile-text">
@@ -49,8 +55,7 @@
                         <p>> I'm a current Brandeis University student who's majoring in computer science. I enjoy creating art in my
                             free time, and I enjoy finding ways to incorporate my art into my programming projects.
                         </p>
-                        <br>
-                        <button onClick="window.open('./assets/resumeMC.pdf')">Resume</button>
+                        <button onClick="window.open('resumeMC.pdf')">Resume</button>
                     </div>
                 </div>
                 
@@ -81,16 +86,16 @@
                         </ul>
                     </div>
                 </div>
-                <h3>My Interests</h3>
-                <ul>
-                    <li>Game Development & Design</li>
-                    <li>Cybersecurity</li>
-                    <li>3D Modeling</li>
-                    <li>Pixel & Vector Art</li>
-                    <li>2D Animation</li>
-                </ul>
-                </section>
-                
+                <div class="interests-container">
+                        <h3>Interests</h3>
+                        <ul>
+                            <li>Game Development/Design</li>
+                            <li>Cybersecurity</li>
+                            <li>3D Modeling</li>
+                            <li>Pixel & Vector Art</li>
+                            <li>2D Animation</li>
+                        </ul>
+                </div>
             </section>
 
             <section id="work" class="content-section">
@@ -109,11 +114,12 @@
                 <hr>
                 <h3>Sketches & Illustrations</h3>
                 <div class="gallery">
-                    <img src="gallery/img1.jpg" class="img" id="img1"alt="Drawing 1">
-                    <img src="gallery/img2.jpg" class="img" id="img2"alt="Drawing 2">
-                    <img src="gallery/img3.jpg" class="img" id="img3"alt="Drawing 3">
-                    <img src="gallery/img4.jpg" class="img" id="img4"alt="Drawing 4">
-                    <img src="gallery/img5.jpg" class="img" id="img5"alt="Drawing 5">                </div>
+                    <img src="gallery/sketch1.png" class="sketches" alt="Placeholder Description" onclick="zoomImage(this)">
+                    <img src="gallery/img2.jpg" class="sketches" onclick="zoomImage(this)">
+                    <img src="gallery/img3.jpg" class="sketches" onclick="zoomImage(this)">
+                    <img src="gallery/img4.jpg" class="sketches" onclick="zoomImage(this)">
+                    <img src="gallery/img5.jpg" class="sketches" onclick="zoomImage(this)">
+                </div>
             </section>
 
             <section id="contact" class="content-section">
